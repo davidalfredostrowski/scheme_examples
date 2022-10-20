@@ -1,0 +1,5 @@
+(define mult
+    (lambda (l)
+      (cond
+        ((null? l) 1 )
+                   (else (* (car l) (mult (cdr l)))))))
