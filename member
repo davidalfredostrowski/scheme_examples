@@ -1,0 +1,11 @@
+(define m
+    (lambda (item l)
+      (display l)(newline)
+      (cond
+        ((null? l) #f)
+        ((eqv? item (car l)) #t)
+        (else
+               (m item (cdr l))))))
+               
+               
+               
