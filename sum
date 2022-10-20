@@ -1,0 +1,5 @@
+(define cnt
+    (lambda (l)
+      (cond
+        ((null? l) 0 )
+                   (else (+ 1 (cnt (cdr l)))))))
