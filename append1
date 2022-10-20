@@ -1,0 +1,6 @@
+
+(define reverse1
+    (lambda (l)
+      (cond
+        ((null? l) '())
+        (else (append (reverse1 (cdr l)) (list (car l)))))))
