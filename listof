@@ -1,0 +1,14 @@
+> (define atom?
+    (lambda (x)
+      (and (not (pair? x)) (not (null? x)))))
+> (define list-of
+
+    (lambda (predicate lst)
+      (or ( null? lst)
+          ( and (pair? lst)
+                (predicate (car lst))
+                (list-of predicate (cdr lst))))))
+> (list-of
+   atom? '(a b c))
+#t
+>
