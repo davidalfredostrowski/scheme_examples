@@ -1,0 +1,21 @@
+
+
+
+> ((lambda (x)
+
+          ( +   7
+              ((lambda (a b)
+                 ( + a
+                     ((lambda (c a)
+                        (+ a b x)) 30000 400 )))  2 2 ))) 5)
+416
+> ((lambda (x)
+
+          ( +   7
+              ((lambda (a b)
+                 ( + a
+                     ((lambda (c a)
+                        (+ a b x)) 30000 400 )))  1
+                                                  2 ))) 5)
+415
+>
